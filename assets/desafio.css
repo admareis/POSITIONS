@@ -13,7 +13,7 @@ body{
     display: grid;
     grid-template-columns: 60px 1fr 2fr;
 }
-nav{
+nav{ /*nav separadas por div para espaçar*/
     background-color: #F7F5F2;
     display: flex;
     flex-direction: column;
@@ -35,10 +35,72 @@ nav{
 .container-nav > img:hover{
     background-color: #a9a9a993;
 }
+.container-form-buttons > input{
+    outline: none;
+}
+.buttons{
+    justify-content: center;
+}
 
 main{
     background-color: burlywood;
 }
-aside{
-    background-color: coral;
+section{
+}
+.topo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+.topo-chat{
+    display: flex;
+}
+.topo-chat > img{
+    width: 30px;
+}
+.topo>h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#5ea516;
+}
+.form{
+    text-align: center;
+}
+.form input{
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-color: #4243432e;
+    outline: none;
+}
+.form input:focus{
+    border-color:  #5ea516;
+}
+.form > img{
+    width: 10px;
+    border-radius: 100%;
+    padding: 7px;
+}
+.form:hover{
+    background-color: #a9a9a993;
+}
+.container-form-buttons{
+    display: flex;
+    flex-direction: column; 
+    padding: 10px;  
+}
+.buttons{
+    display: flex;
+    gap: 8px;
+    padding: 8px;
+}
+.buttons button{
+    border: none;
+    border-radius: 20px;
+    padding: 8px;
+    cursor: pointer;
+}
+.buttons button:hover{
+    background-color: #aad99e77;
 }
